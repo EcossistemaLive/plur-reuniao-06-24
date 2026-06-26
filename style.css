@@ -11,30 +11,51 @@
   --kinetic-gradient: linear-gradient(135deg, #ffffff 0%, #a0a0a0 50%, #00e800 100%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--live-azul-petroleo);
   background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
   color: var(--live-branco);
   font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  padding: 2rem 1rem;
 }
 
-.reveal {
-  background-color: var(--live-azul-petroleo);
-  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--live-branco);
   font-family: 'Poppins', sans-serif;
   text-transform: none;
   font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
-.reveal .texto {
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.texto {
   font-family: 'Merriweather', serif;
   font-weight: 400;
-  font-size: 0.8em;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .glass-card {
@@ -43,9 +64,36 @@ body {
   -webkit-backdrop-filter: var(--glass-blur);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  padding: 3rem !important;
+  padding: 3rem;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  box-sizing: border-box;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 232, 0, 0.3);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+}
+
+.hero .meta {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 2rem;
+}
+
+.hero .logo {
+  width: 150px;
+  margin-top: 2rem;
+  border: none;
+  box-shadow: none;
+  background: transparent;
 }
 
 .highlight {
@@ -55,18 +103,25 @@ body {
 
 .lucide-icon {
   color: var(--live-verde-vibrante);
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.5rem;
+}
+
+.hero .lucide-icon {
   width: 64px;
   height: 64px;
-  margin-bottom: 1rem;
 }
 
-.reveal ul {
+ul {
   font-family: 'Merriweather', serif;
-  font-size: 0.75em;
-  line-height: 1.4;
+  font-size: 0.95em;
+  line-height: 1.5;
   color: var(--live-branco);
+  list-style-position: outside;
+  margin-left: 1.5rem;
 }
 
-.reveal ul li {
-  margin-bottom: 0.8rem;
+ul li {
+  margin-bottom: 1rem;
 }
