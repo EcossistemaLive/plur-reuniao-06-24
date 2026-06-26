@@ -1,0 +1,72 @@
+:root {
+  --live-azul-petroleo: #06192a;
+  --live-verde-vibrante: #00e800;
+  --live-branco: #ffffff;
+  --live-cinza-claro: #f8f9fa;
+  --live-cinza-medio: #6c757d;
+  --live-glass: rgba(10, 36, 61, 0.75);
+  --live-glass-hover: rgba(15, 45, 75, 0.90);
+  --glass-blur: blur(20px) saturate(180%);
+  --live-accent: #00e800;
+  --kinetic-gradient: linear-gradient(135deg, #ffffff 0%, #a0a0a0 50%, #00e800 100%);
+}
+
+body {
+  background-color: var(--live-azul-petroleo);
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  color: var(--live-branco);
+  font-family: 'Poppins', sans-serif;
+}
+
+.reveal {
+  background-color: var(--live-azul-petroleo);
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  color: var(--live-branco);
+  font-family: 'Poppins', sans-serif;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.reveal .texto {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+.glass-card {
+  background: var(--live-glass);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 3rem !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
+}
+
+.highlight {
+  color: var(--live-verde-vibrante);
+  font-weight: 700;
+}
+
+.lucide-icon {
+  color: var(--live-verde-vibrante);
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.reveal ul {
+  font-family: 'Merriweather', serif;
+  font-size: 0.75em;
+  line-height: 1.4;
+  color: var(--live-branco);
+}
+
+.reveal ul li {
+  margin-bottom: 0.8rem;
+}
